@@ -1,0 +1,194 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+% Ashton S. Hellwig's CV
+% Written on Overleaf
+
+\documentclass[]{cv-style}
+
+% --- Packages ---
+% Font
+\usepackage{fontawesome}
+% \renewcommand*{\familydefault}{\ttdefault}
+% \usepackage{fontmfizz}
+\usepackage{setspace}
+\usepackage{xcolor}
+
+% --- Macros ---
+\newcommand{\colorLinkedin}{\textcolor{rgb:red,6;green,108;blue,170}{\faLinkedin}}
+\newcommand{\rar}{\( \leftrightarrow \) }
+\sethyphenation[variant=british]{english}{} 
+
+% --- Header ---
+\begin{document}
+\header{Ashton~}{ \color{green}Hellwig}
+\lastupdated
+
+% --- Sidebar ---
+\begin{aside}
+%
+\section{contact}
+745 S. Lafayette Dr. APT 338
+Lafayette, CO 80026
+U.S.A.
+~
++1 (404) 693 0739
+\hspace{-5.0cm}hellwigashton@gmail.com
+~
+\section{programming}
+% Sh + zSh, baSh, kSh, JCL
+% Clojure
+% TypeScript
+R
+%COBOL
+Python
+Elm
+JavaScript
+Rust
+C/C++
+\LaTeX{}
+% %
+\section{operating systems}
+Arch Linux
+RHEL 7.3
+IBM z/OS
+WIN 2012 Ent. Server
+WIN 7 + 10 Enterprise
+Solaris
+*BSD
+% %
+\section{tools}
+Blockchain (ETH)
+Citrix XenApp
+Citrix Remote Admin
+Cisco
+Avaya
+Tableau
+DameWare
+HubSpot CRM
+G-Suite
+Git SCM
+SVN
+CI/CD Services
+MS Office Suite
+% %
+\section{social}
+{\color{red} $\varheartsuit$} Rpubs: ahellwig
+\faGithub\hspace{0.1ex} ashellwig
+\faGithub\hspace{0.1ex} ashellwig-mgr
+\faGitlab\hspace{0.1ex} ashellwig
+\faGitlab\hspace{0.1ex} ashellwig-mgr
+\colorLinkedin\hspace{0.1ex} ahellwig
+npmJS: ashellwig
+\end{aside}
+
+% --- Summary ---
+\section{summary}
+  \vspace{-0.2cm}
+I am currently studying mathematics and computer science, seeking full time employment in QA/testing, IT, and big data. After having worked for large companies without adequate team management, I am really looking forward to something closer-knit.
+% --- Skills ---
+\section{skills}
+  \vspace{-0.2cm}
+IT Support (Enterprise), Enterprise Customer Support, Python, z/OS (IBM Mainframe), HubSpot CRM, Push \rar Pull Strategy Warehousing, LTL/FTL Trucking, WMS, Inventory Control
+
+% --- Work Experience ---
+\section{experience}
+\begin{entrylist}
+% Mrs. Green's Remedies, 421 Hemp
+\entry
+  {11.17--Now}
+  {Mrs. Green's Remedies}
+  {\textit{Remote}}
+  {\jobtitle{CTO--(06.17-Present)\linebreak Fullstack Engineer and Backend Manager}\\
+  Responsible for backend/database management and administration as well as the construction and deployment of all web-presence.\\
+  Detailed Achievements:
+  \begin{itemize}
+  	\item Built full-stack webapp for Cannabis Exchange with Firebase, Vue.js, and Vuex
+    \item Aided in the development of the education app for android
+    \item Converted website to use database and dynamic routes and from Wix to Wordpress
+  \end{itemize}}
+% TIG
+\entry
+  {05.18--08.17}
+  {Technology Integration Group}
+  {\textit{Louisville, CO}}
+  {\jobtitle{Certified Dell Technician}\\
+  Troubleshoot and repair Dell computers on a contract for the Denver County Public Schools District.}
+% IBM
+\entry
+  {07.17--11.17} 
+  {International Business Machines Corp. (IBM)}
+  {Boulder, CO}
+  {\jobtitle{Global Technology Services: Solutions, Del, \& Transf.}\\
+  \underline{State Street Bank}: Centralized Technical Services\\
+  Level 1.5 CTS Agent, administrator rights to remote into State Street virtual desktops and physical machines after initial troubleshooting as failed on other teams. Mainly services the U.S. and India. Support Active Directory and configuration of multiple server types.\\
+  \underline{Anthem Health Care}: Enterprise IT Service Desk\\
+  Receive incoming calls from employees for issues ranging from mapping of drives to password resets.\\
+  Responsibilities:
+    \begin{itemize}
+  	  \item Configure Windows 7, 10, Enterprise 2012-16, RHEL 7, and z/OS
+      \item Develop troubleshooting and process documentation (Linux)
+      \item Deploy and maintain Windows 10 and Ent. Server 2012-16
+      \item Deploy Microsoft Office 365 via local source and configuration manager
+      \item Troubleshoot and repair personal computers
+  \end{itemize}
+
+  Detailed Achievements:
+  \begin{itemize}
+  	\item Master the Mainframe 2017: Part 2 Competitor
+  \end{itemize}}
+% Trimble
+\entry
+  {05.17--07.17}
+  {Trimble Navigation Ltd.}
+  {Westminster, CO}
+  {\jobtitle{QA Engineer/Manufacturing Test Technician}\\
+  Use proprietary python robot framework software to test electrical Internet of Things (IOT) units, clean and label units after refurbishment, transport units to designated area for shipment as well as other projects as assigned.}
+% FedEx
+% \entry
+%   {03.17--05.17}
+%   {FedEx Ground}
+%   {Henderson, CO}
+%   {\jobtitle{Temporary Material Handler}\\
+%   Daytime sort shift. Load and unload trailers and sort packages for delivery. Hazard Communications Standard trained and certified.}
+% Rexel
+% \entry
+%   {05.16--10.16}
+%   {Rexel Holdings U.S.A.}
+%   {Henderson, CO}
+%   {\jobtitle{Order Selector/Forklift Operator}\\
+%   Part-time -- second shift. Use a Raymond Corp Order Picker Truck (5200-5600) to palletize or bin orders for independent electrical and construction contractors.}
+% % WalMart
+% \entry
+%   {12.14--01.16}
+%   {WalMart Stores, Inc.}
+%   {Lafayette, CO}
+%   {\jobtitle{Inventory Control Systems Specialist}\\
+%   Full-time -- 9 hours per day 5 days per week -- second shift. Unload trucks and process freight as well as store and manage warehouse and process high value items and stock grocery section of the retail sales floor.\\
+%   Detailed achievements:
+%   \begin{itemize}
+%     \item Increased unloaded cases per labor hour  from 150 \( \rightarrow \) 225 \textbf{Which resulted in} a quicker transition to stocking the sales floor and increased interaction with customers resulting in better customer relations was reached.
+%   \end{itemize}}
+\end{entrylist}
+
+% --- Education ---
+\vspace{-0.6cm}
+\section{education}
+\vspace{-0.3cm}
+\begin{entrylist}
+% B.S. from FRCC
+\entry
+{2015--Now}
+{B.Sc. {\normalfont in CS}}
+{Front Range Community College}
+{Computational Mathematics}
+% GED from Erie HS
+\entry
+{2012--2015}
+{GED {\normalfont in General High School [676]}}
+{Erie High School}
+{\vspace{-0.3cm}}
+\end{entrylist}
+\nopagebreak
+% --- End ---
+\end{document}
