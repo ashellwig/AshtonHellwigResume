@@ -1,0 +1,4 @@
+{
+  "latex-workshop.latex.clean.enabled": true,
+  "latex-workshop.latex.outputDir": "./out"
+}
